@@ -1,0 +1,22 @@
+keycloak:
+  realm: intern-mobility
+  domain: localhost:8085
+  adminClientId: admin-cli
+  adminClientSecret: 5JIkSFdEK7YZylbfKQnULfi5zpvPHPdh
+  client: authenticationClientId
+  urls:
+    auth: http://${keycloak.domain}
+
+server:
+  port: 8090
+
+#spring:
+#  jpa:
+#    hibernate:
+#      ddl-auto: create
+#
+#    datasource:
+#      url: jdbc:mysql://localhost:3378/keycloak_db
+#      username: user
+#      password: password
+#      driver-class-name: com.mysql.cj.jdbc.Driver
